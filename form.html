@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input">
+        First Name: <input class="firstname" placeholder="firstname"><br>
+        Last Name: <input class="lastname" placeholder="lastname"><br>
+        Moblie num: <input class="mobile" placeholder="mobile num" oninput="mobile()" onclick="mobileShow()"><br>
+        <span class="mobileWarning" style="display: none; color:red">(Enter only number)</span>
+        <span class="mobileNumLength" style="display: none; color:red">Number should be 10 digits</span>
+        Email: <input class="email" placeholder="email"><br>
+        Password: <input class="password" placeholder="password" oninput="pass()" onclick="pass()"><br>
+        <span class="passwordWarning" style="color:red; display:none">(must contain special character)</span>
+        <span class="passwordLength" style="color:red; display:none">(length must be greater then six)</span>
+        Confirm Password: <input class="passConfirm" oninput="passConfirm()" placeholder="password"><br>
+        <span class="passwordConfirmWarning" style="color:red; display:none">(Does not match password)</span><br>
+        <button class="submit" onclick="submitForm()">submit</button>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
